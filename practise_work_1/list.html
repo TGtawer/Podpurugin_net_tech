@@ -16,25 +16,18 @@
         <details>
             <summary>График</summary>
             <form>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Значение по оси Х</th>
-                            <th>Результат</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                            <tr>
-                                <td><label> <input type="radio">Тип</label><br></td>
-                                <td><label> <input type="checkbox">Максимальная стоимость</label><br></td>
-                            </tr>
-                            <tr>
-                                <td><label> <input type="radio">Страна производитель</label><br></td>
-                                <td><label> <input type="checkbox">Максимальная теплопроводность</label><br></td>
-                            </tr>    
-                    </tbody>
-                </table>
-                <p><input type="submit" value="Построить"></p>
+                <div>Значение по оси Х&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Результат</div>
+                <div>
+                  <label><input type="radio">Тип</label>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <label><input type="checkbox">Максимальная стоимость</label>
+                </div>
+                <div>
+                  <label><input type="radio">Страна производитель</label>
+                  &nbsp;
+                  <label><input type="checkbox">Максимальная теплопроводность</label>
+                </div>
+                <div><input type="button" value="Построить"></div>
             </form>
             <p>Здесь будет график.</p>
         </details>
@@ -42,71 +35,73 @@
         <details>
             <summary>Фильтр</summary>
             <form>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Название: </td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td>Тип материала: </td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td>Страна производитель: </td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td>Огнестойкость: </td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td>Теплопроводность: </td>
-                            <td><input type="number"></td>
-                        </tr>
-                        <tr>
-                            <td>Цена: </td>
-                            <td><input type="number"></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div>Название:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></div>
+                <div>Тип материала:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></div>
+                <div>Страна производитель:&nbsp;<input type="text"></div>
+                <div>Огнестойкость:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></div>
+                <div>Теплопроводность:&nbsp;&nbsp;&nbsp;от <input type="number"> до <input type="number"></div>
+                <div>Цена:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; от <input type="number"> до <input type="number"></div>
             </form>
-            <div><input type="submit" value="Найти"></div>
+            <div><input type="button" value="Найти"></div>
         </details>
         
         <details>
             <summary>Сортировка</summary>
             <form>
                 <p>
-                    Теплопроводность: 
-                    <select id="thermalSort">
-                        <option value="0">По убыванию</option>
-                        <option value="1">По возрастанию</option>
+                    Первый уровень: 
+                    <select id="first_lvl">
+                        <option value="0">Нет</option>
+                        <option value="1">Теплопроводность</option>
+                        <option value="2">Тип материала</option>
+                        <option value="3">Страна производитель</option>
+                        <option value="4">Огнестойкость</option>
+                        <option value="5">Цена</option>
                     </select>
+                    по убыванию?
+                    <input type="checkbox"><br>
                 </p>
                 <p>
-                    Цена: 
-                    <select id="priceSort">
-                        <option value="0">По убыванию</option>
-                        <option value="1">По возрастанию</option>
+                    Второй уровень: 
+                    <select id="second_lvl">
+                        <option value="0">Нет</option>
+                        <option value="1">Теплопроводность</option>
+                        <option value="2">Тип материала</option>
+                        <option value="3">Страна производитель</option>
+                        <option value="4">Огнестойкость</option>
+                        <option value="5">Цена</option>
                     </select>
+                    по убыванию?
+                    <input type="checkbox"><br>
                 </p>
-                <p><input type="submit" value="Сортировать"></p>
+                <p>
+                    Третий уровень: 
+                    <select id="third_lvl">
+                        <option value="0">Нет</option>
+                        <option value="1">Теплопроводность</option>
+                        <option value="2">Тип материала</option>
+                        <option value="3">Страна производитель</option>
+                        <option value="4">Огнестойкость</option>
+                        <option value="5">Цена</option>
+                    </select>
+                    по убыванию?
+                    <input type="checkbox"><br>
+                </p>
+                <p><input type="button" value="Сортировать"></p>
             </form>
         </details>
 
     </div><br>
     
     <table border="1">
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Тип материала</th>
-                <th>Страна производитель</th>
-                <th>Огнестойкость</th>
-                <th>Теплопроводность</th>
-                <th>Цена</th>
-            </tr>
+        <tr>
+            <th>Название</th>
+            <th>Тип материала</th>
+            <th>Страна производитель</th>
+            <th>Огнестойкость</th>
+            <th>Теплопроводность (Вт/(м·К))</th>
+            <th>Цена</th>
+        </tr>
         </thead>
         <tbody>
             <tr>
@@ -114,240 +109,240 @@
                 <td>Утеплитель</td>
                 <td>Дания</td>
                 <td>Негорючий</td>
-                <td>0,035 Вт/(м·К)</td>
-                <td>1 250 руб/м²</td>
+                <td>0.035</td>
+                <td>1250</td>
             </tr>
             <tr>
                 <td>Пенополистирол ПСБ-С-25</td>
                 <td>Утеплитель</td>
                 <td>Россия</td>
                 <td>Горючий</td>
-                <td>0,038 Вт/(м·К)</td>
-                <td>890 руб/м²</td>
+                <td>0.038</td>
+                <td>890</td>
             </tr>
             <tr>
                 <td>Гипсокартон КНАУФ</td>
                 <td>Отделочный</td>
                 <td>Германия</td>
                 <td>Огнестойкий</td>
-                <td>0,21 Вт/(м·К)</td>
-                <td>320 руб/лист</td>
+                <td>0.21</td>
+                <td>320</td>
             </tr>
             <tr>
                 <td>Кирпич керамический</td>
                 <td>Конструкционный</td>
                 <td>Россия</td>
                 <td>Негорючий</td>
-                <td>0,5 Вт/(м·К)</td>
-                <td>28 руб/шт</td>
+                <td>0.5</td>
+                <td>28</td>
             </tr>
             <tr>
                 <td>Пеноплекс Комфорт</td>
                 <td>Утеплитель</td>
                 <td>Россия</td>
                 <td>Горючий</td>
-                <td>0,032 Вт/(м·К)</td>
-                <td>1 150 руб/м²</td>
+                <td>0.032</td>
+                <td>1150</td>
             </tr>
             <tr>
                 <td>Базальтовая вата Технониколь</td>
                 <td>Утеплитель</td>
                 <td>Россия</td>
                 <td>Негорючий</td>
-                <td>0,036 Вт/(м·К)</td>
-                <td>980 руб/м²</td>
+                <td>0.036</td>
+                <td>980</td>
             </tr>
             <tr>
                 <td>Газобетонный блок</td>
                 <td>Конструкционный</td>
                 <td>Россия</td>
                 <td>Негорючий</td>
-                <td>0,12 Вт/(м·К)</td>
-                <td>4 500 руб/м³</td>
+                <td>0.12</td>
+                <td>4500</td>
             </tr>
             <tr>
                 <td>OSB-плита</td>
                 <td>Конструкционный</td>
                 <td>Беларусь</td>
                 <td>Горючий</td>
-                <td>0,13 Вт/(м·К)</td>
-                <td>650 руб/лист</td>
+                <td>0.13</td>
+                <td>650</td>
             </tr>
             <tr>
                 <td>Эковата</td>
                 <td>Утеплитель</td>
                 <td>Финляндия</td>
                 <td>Трудногорючий</td>
-                <td>0,041 Вт/(м·К)</td>
-                <td>850 руб/м²</td>
+                <td>0.041</td>
+                <td>850</td>
             </tr>
             <tr>
                 <td>Пеностекло</td>
                 <td>Утеплитель</td>
                 <td>Китай</td>
                 <td>Негорючий</td>
-                <td>0,045 Вт/(м·К)</td>
-                <td>2 300 руб/м²</td>
+                <td>0.045</td>
+                <td>2300</td>
             </tr>
             <tr>
                 <td>Цементно-стружечная плита</td>
                 <td>Отделочный</td>
                 <td>Россия</td>
                 <td>Негорючий</td>
-                <td>0,26 Вт/(м·К)</td>
-                <td>950 руб/лист</td>
+                <td>0.26</td>
+                <td>950</td>
             </tr>
             <tr>
                 <td>Пенополиуретан</td>
                 <td>Утеплитель</td>
                 <td>Германия</td>
                 <td>Горючий</td>
-                <td>0,023 Вт/(м·К)</td>
-                <td>1 800 руб/м²</td>
+                <td>0.023</td>
+                <td>1800</td>
             </tr>
             <tr>
                 <td>Керамзит</td>
                 <td>Утеплитель</td>
                 <td>Россия</td>
                 <td>Негорючий</td>
-                <td>0,12 Вт/(м·К)</td>
-                <td>2 100 руб/м³</td>
+                <td>0.12</td>
+                <td>2100</td>
             </tr>
             <tr>
                 <td>Металлопрофиль</td>
                 <td>Конструкционный</td>
                 <td>Россия</td>
                 <td>Негорючий</td>
-                <td>50 Вт/(м·К)</td>
-                <td>450 руб/м²</td>
+                <td>50</td>
+                <td>450</td>
             </tr>
             <tr>
                 <td>Вермикулит</td>
                 <td>Утеплитель</td>
                 <td>Казахстан</td>
                 <td>Негорючий</td>
-                <td>0,065 Вт/(м·К)</td>
-                <td>3 200 руб/м³</td>
+                <td>0.065</td>
+                <td>3200</td>
             </tr>
             <tr>
                 <td>Пенобетон</td>
                 <td>Конструкционный</td>
                 <td>Россия</td>
                 <td>Негорючий</td>
-                <td>0,14 Вт/(м·К)</td>
-                <td>3 800 руб/м³</td>
+                <td>0.14</td>
+                <td>3800</td>
             </tr>
             <tr>
                 <td>Пробковая плита</td>
                 <td>Утеплитель</td>
                 <td>Португалия</td>
                 <td>Трудногорючий</td>
-                <td>0,042 Вт/(м·К)</td>
-                <td>1 450 руб/м²</td>
+                <td>0.042</td>
+                <td>1450</td>
             </tr>
             <tr>
                 <td>Стекловата Ursa</td>
                 <td>Утеплитель</td>
                 <td>Испания</td>
                 <td>Негорючий</td>
-                <td>0,044 Вт/(м·К)</td>
-                <td>720 руб/м²</td>
+                <td>0.044</td>
+                <td>720</td>
             </tr>
             <tr>
                 <td>Древесно-волокнистая плита</td>
                 <td>Отделочный</td>
                 <td>Швеция</td>
                 <td>Горючий</td>
-                <td>0,07 Вт/(м·К)</td>
-                <td>1 100 руб/лист</td>
+                <td>0.07</td>
+                <td>1100</td>
             </tr>
             <tr>
                 <td>Пенополиэтилен</td>
                 <td>Утеплитель</td>
                 <td>Россия</td>
                 <td>Горючий</td>
-                <td>0,038 Вт/(м·К)</td>
-                <td>280 руб/м²</td>
+                <td>0.038</td>
+                <td>280</td>
             </tr>
             <tr>
                 <td>Клинкерный кирпич</td>
                 <td>Конструкционный</td>
                 <td>Германия</td>
                 <td>Негорючий</td>
-                <td>0,8 Вт/(м·К)</td>
-                <td>45 руб/шт</td>
+                <td>0.8</td>
+                <td>45</td>
             </tr>
             <tr>
                 <td>Мипора</td>
                 <td>Утеплитель</td>
                 <td>Россия</td>
                 <td>Горючий</td>
-                <td>0,03 Вт/(м·К)</td>
-                <td>1 600 руб/м²</td>
+                <td>0.03</td>
+                <td>1600</td>
             </tr>
             <tr>
                 <td>Гипсоволокнистый лист</td>
                 <td>Отделочный</td>
                 <td>Россия</td>
                 <td>Огнестойкий</td>
-                <td>0,23 Вт/(м·К)</td>
-                <td>580 руб/лист</td>
+                <td>0.23</td>
+                <td>580</td>
             </tr>
             <tr>
                 <td>Арболит</td>
                 <td>Конструкционный</td>
                 <td>Россия</td>
                 <td>Трудногорючий</td>
-                <td>0,11 Вт/(м·К)</td>
-                <td>5 200 руб/м³</td>
+                <td>0.11</td>
+                <td>5200</td>
             </tr>
             <tr>
                 <td>Пеноизол</td>
                 <td>Утеплитель</td>
                 <td>Россия</td>
                 <td>Горючий</td>
-                <td>0,04 Вт/(м·К)</td>
-                <td>950 руб/м²</td>
+                <td>0.04</td>
+                <td>950</td>
             </tr>
             <tr>
                 <td>Керамическая плитка</td>
                 <td>Отделочный</td>
                 <td>Италия</td>
                 <td>Негорючий</td>
-                <td>1,2 Вт/(м·К)</td>
-                <td>1 800 руб/м²</td>
+                <td>1.2</td>
+                <td>1800</td>
             </tr>
             <tr>
                 <td>Железобетонная плита</td>
                 <td>Конструкционный</td>
                 <td>Россия</td>
                 <td>Негорючий</td>
-                <td>1,7 Вт/(м·К)</td>
-                <td>8 500 руб/м³</td>
+                <td>1.7</td>
+                <td>8500</td>
             </tr>
             <tr>
                 <td>Пенополипропилен</td>
                 <td>Утеплитель</td>
                 <td>Китай</td>
                 <td>Горючий</td>
-                <td>0,034 Вт/(м·К)</td>
-                <td>1 320 руб/м²</td>
+                <td>0.034</td>
+                <td>1320</td>
             </tr>
             <tr>
                 <td>Силикатный кирпич</td>
                 <td>Конструкционный</td>
                 <td>Россия</td>
                 <td>Негорючий</td>
-                <td>0,7 Вт/(м·К)</td>
-                <td>22 руб/шт</td>
+                <td>0.7</td>
+                <td>22</td>
             </tr>
             <tr>
                 <td>Минеральная плита Isover</td>
                 <td>Утеплитель</td>
                 <td>Франция</td>
                 <td>Негорючий</td>
-                <td>0,037 Вт/(м·К)</td>
-                <td>1 080 руб/м²</td>
+                <td>0.037</td>
+                <td>1080</td>
             </tr>
         </tbody>
     </table>

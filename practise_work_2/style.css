@@ -1,0 +1,185 @@
+.header{
+	width: auto;
+	border-top:  medium lightgrey double;
+	border-bottom: medium lightgrey double;
+	overflow: hidden;
+	padding: 0px 0px 0px 27%;
+	margin: 10px;
+}
+
+.menu_block{
+	height: 55px;
+	width: 90px;
+	line-height: 55px;
+	text-align: center;
+	border-left: medium lightgrey double;
+	border-right: medium lightgrey double;
+	float: left;
+}
+
+#search_img{
+	width: 22px;
+	height: 22px;
+	margin: 5px 2px;
+}
+
+#search_field{
+	float: left;
+	margin: 5px;
+}
+
+.search_cont{
+	float: right;
+	margin: 1% 4% 0px 0px;
+}
+
+#picture_block{
+	width: 95%;
+	overflow: hidden;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#huge_img{
+	width: 30%;
+	border: thin grey solid;
+}
+
+#block_3{
+	display: inline-block;
+	border: thin grey solid;
+	overflow: hidden;
+
+}
+
+.block_2{
+	overflow: hidden;
+	display: inline-block;
+	height: 100%;
+	width: 49%;
+	border: thin grey solid;
+}
+
+.half_img_cont{
+	width: 100%;
+	height: 50%;
+	border: thin solid red;
+	overflow: hidden;
+}
+
+#side_img_cont{
+	display: inline-block;
+	border: thin solid red;
+	overflow: hidden;
+}
+
+#full_img{
+	width: 100%;
+}
+
+.con_400_400{
+	height: 400px;
+	width: 400px;
+}
+
+#pic_header_block{
+	width: 95%;
+	overflow: hidden;
+	margin: 10px auto;
+	text-align: center;
+}
+
+
+.merge_block{
+	border: thin solid red;
+	width: calc(85% / 6);
+	display: inline-block;
+	overflow: hidden;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+.rounded_box {
+  width: 120px;
+  height: 120px;
+  background-color: #3498db;
+  border: thin solid grey;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px 0px 0px 0px;
+}
+
+.text_under_rounded_pic{
+	margin: 10px 10px;
+}
+
+.more_button{
+	width: 100px;
+}
+
+#h_block{
+	width: 95%;
+	margin: 0px auto;
+	text-align: justify;
+	overflow: hidden;
+	border: thin solid red;
+}
+
+#h_block h3{
+	text-align: center;
+}
+
+#h_block a{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+}
+
+#picture_h_block_4{
+	width: 95%;
+	border: thin solid blue;
+	margin: 10px auto;
+}
+
+
+.two_hor{
+	width: 100%;
+	border: thin solid blue;
+	text-align: center;
+
+}
+
+.in_two_hor{
+	width: 47%;
+	border: thin solid blue;
+	padding: 5px; 
+	display: inline-block;
+	margin: 5px;
+	text-align: justify;
+}
+
+.two_hor p{
+	text-align: justify;
+	overflow: hidden;
+}
+
+.img_block_last{
+	width: 25%;
+	height: 50%;
+	margin: 5px;
+	overflow: hidden;
+	border: thin solid red;
+	float: left;
+}
+
+.img_in_two_hor{
+	width: 100%;
+}
+
+.text_right_img{
+	width: 60%;
+	border: thin solid red;
+	display: inline-block;
+}

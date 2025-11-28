@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа №4</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+	<header>
+    <nav class="navbar navbar-expand-md bg-light navbar-light ms-2" >
+
+	    <!-- Кнопка для свернутого меню -->
+	  <button 
+	    class="navbar-toggler" 
+	    type="button" 
+	    data-bs-toggle="collapse" 
+	    data-bs-target="#menu"
+	  >
+	     <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	    <!-- меню -->
+	  <div class="collapse navbar-collapse" id="menu">
+
+	    <ul class="navbar-nav mx-auto">
+	      <li class="nav-item border-start border-end">
+	        <a class="nav-link text-success" href="#">Популярные</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Список</a>
+	      </li>
+	    </ul>
+	    <form  class="d-flex ms-auto me-2">
+	        <input class="form-control" type="text" placeholder="Поиск">
+	        <button class="btn btn-outline-success" type="submit">Поиск</button>
+	    </form>
+	  </div>
+	  
+	</nav>
+  </header>
+
+  <div 
+	  id="gallery" 
+	  class="carousel slide border" 
+	  data-bs-ride="carousel"
+	>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="images/wood.jpg" class="d-block mx-auto w-25" alt="">
+			</div>
+			<div class="carousel-item ">
+				<img src="images/brick.jpg" class="d-block mx-auto w-25" alt="">
+			</div>
+			<div class="carousel-item">
+				<img src="images/cement.jpg" class="d-block mx-auto w-25" alt="">
+			</div>
+			<div class="carousel-item">
+				<img src="images/steel.jpg" class="d-block mx-auto w-25" alt="">
+			</div>
+		</div>
+
+			<button 
+	      class="carousel-control-prev" 
+	      type="button" 
+	      data-bs-target="#gallery" 
+	      data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Предыдущий</span>
+	    </button>
+
+	    <button 
+	      class="carousel-control-next" 
+	      type="button" 
+	      data-bs-target="#gallery" 
+	      data-bs-slide="next">
+	    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	   	 	<span class="visually-hidden">Следующий</span>
+	  	</button>
+
+	</div>
+
+
+	<main class="container">
+		<div class="row text-center	">
+			<div class="col-lg-2 col-sm-12 border">
+				<div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto border overflow-hidden w-75 mt-2">
+					<img src="images/steel.jpg" class="w-100 h-100 object-fit-cover" alt="">
+				</div>
+				<h3>Сталь</h3>
+				<div class="mb-2">Скидка!!!</div>
+				<button class="btn btn-outline-primary" type="submit">Подробнее</button>
+			</div>
+			<div class="col-lg-2 col-sm-12 border">
+				<div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto border overflow-hidden w-75 mt-2">
+					<img src="images/steel.jpg" class="w-100 h-100 object-fit-cover" alt="">
+				</div>
+				<h3>Сталь</h3>
+				<div class="mb-2">Скидка!!!</div>
+				<button class="btn btn-outline-primary" type="submit">Подробнее</button>
+			</div>
+			<div class="col-lg-2 col-sm-12 border">
+				<div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto border overflow-hidden w-75 mt-2">
+					<img src="images/steel.jpg" class="w-100 h-100 object-fit-cover" alt="">
+				</div>
+				<h3>Сталь</h3>
+				<div class="mb-2">Скидка!!!</div>
+				<button class="btn btn-outline-primary" type="submit">Подробнее</button>
+			</div>
+			<div class="col-lg-2 col-sm-12 border">
+				<div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto border overflow-hidden w-75 mt-2">
+					<img src="images/steel.jpg" class="w-100 h-100 object-fit-cover" alt="">
+				</div>
+				<h3>Сталь</h3>
+				<div class="mb-2">Скидка!!!</div>
+				<button class="btn btn-outline-primary" type="submit">Подробнее</button>
+			</div>
+			<div class="col-lg-2 col-sm-12 border">
+				<div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto border overflow-hidden w-75 mt-2">
+					<img src="images/steel.jpg" class="w-100 h-100 object-fit-cover" alt="">
+				</div>
+				<h3>Сталь</h3>
+				<div class="mb-2">Скидка!!!</div>
+				<button class="btn btn-outline-primary" type="submit">Подробнее</button>
+			</div>
+			<div class="col-lg-2 col-sm-12 border">
+				<div class="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto border overflow-hidden w-75 mt-2">
+					<img src="images/steel.jpg" class="w-100 h-100 object-fit-cover" alt="">
+				</div>
+				<h3>Сталь</h3>
+				<div class="mb-2">Скидка!!!</div>
+				<button class="btn btn-outline-primary" type="submit">Подробнее</button>
+			</div>
+		</div>
+
+		<div>
+			<h4>Дерево</h4>
+			<p>Дерево является фундаментальным материалом в современном строительстве благодаря своей прочности, долговечности и универсальности. Его применения охватывают практически все области возведения сооружений.<br>
+        Наиболее масштабное использование дерево находит в создании несущих конструкций. Это, прежде всего, фундаменты всех типов: от ленточных и плитных для частных домов до массивных свайных ростверков для небоскребов и мостов. Из железобетона (дерева, армированного стальной арматурой) возводят каркасы зданий, колонны, балки и перекрытия, которые воспринимают основные нагрузки.<br>
+        Широко применяется дерево в гражданском и дорожном строительстве. Это материал для строительства плотин, мостов, тоннелей, водопроводных и канализационных коллекторов. Из него делают дороги (деревянное покрытие обладает высокой износостойкостью), взлетно-посадочные полосы аэродромов и тротуары.<br>
+        Кроме того, дерево используется для изготовления множества строительных изделий: блоков (стеновых и фундаментных), бордюрного камня, тротуарной плитки, колец для колодцев и других элементов. Его способность принимать любую форму позволяет создавать сложные архитектурные и декоративные элементы фасадов и интерьеров.<br>
+        Таким образом, от гигантских инфраструктурных проектов до элементов благоустройства дерево остается незаменимым материалом, обеспечивающим прочность и устойчивость построек на десятилетия.</p>
+    </div>
+
+  	<div class="container">
+	  	<div class="row mt-5 gap-3">
+	    	<div class="col-lg col-sm-12 border">
+	    		<div class="row">
+	    			<div class="col-4 border">
+	    				<img src="images/steel.jpg" class="d-block mx-auto my-auto w-100" alt="">
+	    			</div>
+	    			<div class="col-8">
+	    				<p>Сталь — ключевой материал для конструкций, требующих высокой прочности и надежности. Ее главное преимущество — исключительная несущая способность при относительно малом весе.</p>
+	    				<a href="#">Подробнее>></a>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="col-lg col-sm-12 border">
+	    		<div class="row">
+	    			<div class="col-4 border">
+	    				<img src="images/steel.jpg" class="d-block mx-auto my-auto w-100" alt="">
+	    			</div>
+	    			<div class="col-8">
+	    				<p>Сталь — ключевой материал для конструкций, требующих высокой прочности и надежности. Ее главное преимущество — исключительная несущая способность при относительно малом весе.</p>
+	    				<a href="#">Подробнее>></a>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="row mt-5 gap-3">
+	    	<div class="col-lg col-sm-12 border">
+	    		<div class="row">
+	    			<div class="col-4 border">
+	    				<img src="images/steel.jpg" class="d-block mx-auto my-auto w-100" alt="">
+	    			</div>
+	    			<div class="col-8">
+	    				<p>Сталь — ключевой материал для конструкций, требующих высокой прочности и надежности. Ее главное преимущество — исключительная несущая способность при относительно малом весе.</p>
+	    				<a href="#">Подробнее>></a>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="col-lg col-sm-12 border">
+	    		<div class="row">
+	    			<div class="col-4 border">
+	    				<img src="images/steel.jpg" class="d-block mx-auto my-auto w-100" alt="">
+	    			</div>
+	    			<div class="col-8">
+	    				<p>Сталь — ключевой материал для конструкций, требующих высокой прочности и надежности. Ее главное преимущество — исключительная несущая способность при относительно малом весе.</p>
+	    				<a href="#">Подробнее>></a>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+  	</div>
+    
+
+	</main>
+
+	<footer>
+    <hr>
+    <p class="footer me-2">
+        Группа: Б9123-09.03.04<br>
+        Подгруппа: 6<br>
+        ФИО разработчика: Подпругин Никита Игоревич
+    </p>
+	</footer>
+</body>
+</html>

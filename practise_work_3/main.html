@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практическая работа №2</title>
+    <title>Практическая работа №3</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="header">
-            <div class="menu_block menu_block_main">Популярные</div>
-            <div class="menu_block">Список</div>
+            <div class="menu_container">
+                <div class="menu_block menu_block_main">Популярные</div>
+                <div class="menu_block">Список</div>
+            </div>
             <div class="search_cont">
                 <form class="search_field"> 
                     <input type="text" placeholder="Поиск">
@@ -20,27 +22,14 @@
         </div>
     </header>
 
-    <div class="picture_block">
-        <div class="con_400_400 side_img_cont">
-            <img src="../img/cement.jpg" class="full_img" alt="Цемент">
-        </div>
-        <div class="con_400_400 block_3">
-            <div class="half_img_cont">
-                <div class="block_2">
-                    <img src="../img/wood.jpg" class="full_img" alt="Дерево">
-                </div>
-                <div class="block_2">
-                    <img src="../img/brick.jpg" class="full_img" alt="Кирпич">
-                </div>
-            </div>
-            <div class="half_img_cont bottom_img_cont">
-                <img src="../img/wood.jpg" class="full_img" alt="Дерево">
-            </div>
-        </div>
-        <div class="con_400_400 side_img_cont">
-            <img src="../img/steel.jpg" class="full_img" alt="Сталь">
-        </div>
+    <div class="grid-container">
+      <div class="item-pic_1"> <img src="../img/cement.jpg" class="full_img" alt="Цемент"></div>
+      <div class="item-pic_2"> <img src="../img/wood.jpg" class="full_img" alt="Цемент"></div>
+      <div class="item-pic_3"> <img src="../img/cement.jpg" class="full_img" alt="Цемент"></div>
+      <div class="item-pic_4"> <img src="../img/steel.jpg" class="full_img" alt="Цемент"></div>
+      <div class="item-pic_5"> <img src="../img/wood.jpg" class="full_img" alt="Цемент"></div>
     </div>
+
 
     <div class="pic_header_block">
         <div class="merge_block">

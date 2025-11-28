@@ -1,185 +1,225 @@
 .header{
-	width: auto;
-	border-top:  medium lightgrey double;
-	border-bottom: medium lightgrey double;
-	overflow: hidden;
-	padding: 0px 0px 0px 27%;
-	margin: 10px;
+    width: auto;
+    border-top: medium lightgrey double;
+    border-bottom: medium lightgrey double;
+    overflow: hidden;
+    padding: 0 0 0 27%;
+    margin: 1%;
 }
 
 .menu_block{
-	height: 55px;
-	width: 90px;
-	line-height: 55px;
-	text-align: center;
-	border-left: medium lightgrey double;
-	border-right: medium lightgrey double;
-	float: left;
+    height: 55px;
+    width: 125px;
+    line-height: 55px;
+    text-align: center;
+    float: left;
 }
 
-#search_img{
-	width: 22px;
-	height: 22px;
-	margin: 5px 2px;
+.menu_block_main{
+    color: green;
+    font-size: 1.10em;
+    font-weight: bold;
+    border-left: medium lightgrey double;
+    border-right: medium lightgrey double;
 }
 
-#search_field{
-	float: left;
-	margin: 5px;
+.search_img{
+    width: 10%;
+    height: 10%;
+    margin: 1% 0.5%;
+    object-fit: contain;
+}
+
+.search_field{
+    float: left;
+    margin: 1%;
+    width: 80%;
+}
+
+.search_field input{
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .search_cont{
-	float: right;
-	margin: 1% 4% 0px 0px;
+    float: right;
+    margin: 1% 4% 0 0;
+    width: 19%;
 }
 
-#picture_block{
-	width: 95%;
-	overflow: hidden;
-	margin: 0px auto;
-	text-align: center;
+.picture_block{
+    width: 95%;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    border: thin solid black;
 }
 
-#huge_img{
-	width: 30%;
-	border: thin grey solid;
+.huge_img{
+    width: 30%;
+    max-width: 100%;
+    object-fit: contain;
 }
 
-#block_3{
-	display: inline-block;
-	border: thin grey solid;
-	overflow: hidden;
-
+.block_3{
+    display: inline-block;
+    overflow: hidden;
+    width: 30%;
 }
 
 .block_2{
-	overflow: hidden;
-	display: inline-block;
-	height: 100%;
-	width: 49%;
-	border: thin grey solid;
+    overflow: hidden;
+    display: inline-block;
+    height: 100%;
+    width: 48%;
+    vertical-align: top;
 }
 
 .half_img_cont{
-	width: 100%;
-	height: 50%;
-	border: thin solid red;
-	overflow: hidden;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
 }
 
-#side_img_cont{
-	display: inline-block;
-	border: thin solid red;
-	overflow: hidden;
+.side_img_cont{
+    display: inline-block;
+    overflow: hidden;
+    width: 30%;
 }
 
-#full_img{
-	width: 100%;
+.full_img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .con_400_400{
-	height: 400px;
-	width: 400px;
+    height: 25vw;
+    width: 25vw;
+    max-width: 100%;
 }
 
-#pic_header_block{
-	width: 95%;
-	overflow: hidden;
-	margin: 10px auto;
-	text-align: center;
+.pic_header_block{
+    width: 95%;
+    overflow: hidden;
+    margin: 1% auto;
+    text-align: center;
 }
-
 
 .merge_block{
-	border: thin solid red;
-	width: calc(85% / 6);
-	display: inline-block;
-	overflow: hidden;
-	box-sizing: border-box;
-	vertical-align: top;
+    width: calc(85% / 6);
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0 0.5%;
 }
 
 .rounded_box {
-  width: 120px;
-  height: 120px;
-  background-color: #3498db;
-  border: thin solid grey;
-  border-radius: 50%;
-  color: white;
-  display: inline-block;
-  overflow: hidden;
-  margin: 10px 0px 0px 0px;
+    width: 8vw;
+    height: 8vw;
+    max-width: 120px;
+    max-height: 120px;
+    background-color: #3498db;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    overflow: hidden;
+    margin: 1% 0;
+}
+
+.rounded_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .text_under_rounded_pic{
-	margin: 10px 10px;
+    margin: 1% 2%;
+    font-size: 0.9em;
 }
 
 .more_button{
-	width: 100px;
+    width: 80%;
+    max-width: 100px;
+    margin: 2% auto;
 }
 
-#h_block{
-	width: 95%;
-	margin: 0px auto;
-	text-align: justify;
-	overflow: hidden;
-	border: thin solid red;
+.h_block{
+    width: 95%;
+    margin: 0 auto;
+    text-align: justify;
+    overflow: hidden;
 }
 
-#h_block h3{
-	text-align: center;
+.h_block h3{
+    text-align: center;
 }
 
-#h_block a{
+.h_block a{
     display: block;
     text-align: right;
     text-decoration: none;
+    margin: 1% 0;
 }
 
-#picture_h_block_4{
-	width: 95%;
-	border: thin solid blue;
-	margin: 10px auto;
+.picture_h_block_4{
+    width: 95%;
+    margin: 1% auto;
 }
-
 
 .two_hor{
-	width: 100%;
-	border: thin solid blue;
-	text-align: center;
-
+    width: 100%;
+    text-align: center;
 }
 
 .in_two_hor{
-	width: 47%;
-	border: thin solid blue;
-	padding: 5px; 
-	display: inline-block;
-	margin: 5px;
-	text-align: justify;
+    width: 47%;
+    padding: 1%; 
+    height: 100%;
+    display: inline-block;
+    margin: 0.5%;
+    text-align: justify;
+    vertical-align: top;
 }
 
 .two_hor p{
-	text-align: justify;
-	overflow: hidden;
+    text-align: justify;
+    overflow: hidden;
 }
 
 .img_block_last{
-	width: 25%;
-	height: 50%;
-	margin: 5px;
-	overflow: hidden;
-	border: thin solid red;
-	float: left;
+    width: 25%;
+    height: 100%;
+    margin: 2%;
+    overflow: hidden;
+    float: left;
 }
 
 .img_in_two_hor{
-	width: 100%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .text_right_img{
-	width: 60%;
-	border: thin solid red;
-	display: inline-block;
+    width: 60%;
+    margin: 2%;
+    display: inline-block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer{
+    text-align: right;
 }

@@ -183,6 +183,14 @@ img {
     margin: 1% auto;
 }
 
+.picture_h_block_4_new {
+    width: 95%;
+    display: grid;
+    margin: auto;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .two_hor {
     width: 100%;
     text-align: center;
@@ -192,14 +200,15 @@ img {
     margin-bottom: 20px;
 }
 
-.in_two_hor {
-    width: 47%;
-    padding: 1%;
-    height: 100%;
-    display: flex;
-    margin: 0.5%;
-    text-align: justify;
-    vertical-align: top;
+.in_four {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+}
+
+.in_four_text {
+    display: grid;
+    margin: 10px;
 }
 
 .img_block_last {
@@ -283,6 +292,10 @@ img {
 }
 
 @media(max-width: 800px){
+    .picture_h_block_4_new{
+        grid-template-columns: 1fr;
+    }
+
     .grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
